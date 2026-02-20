@@ -5,20 +5,20 @@
 class SylMd2ppt < Formula
   desc "把 EN/CN Markdown 一键转换为单个双语 PPTX 的命令行工具"
   homepage "https://github.com/hooziwang/syl-md2ppt"
-  version "1.0.3"
+  version "1.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hooziwang/syl-md2ppt/releases/download/v1.0.3/syl-md2ppt_1.0.3_darwin_amd64.tar.gz"
-      sha256 "80fd08a6b249f5ccd4732998591b8fec0932c3b7c54c62f226329644f4c15dcc"
+      url "https://github.com/hooziwang/syl-md2ppt/releases/download/v1.0.4/syl-md2ppt_1.0.4_darwin_amd64.tar.gz"
+      sha256 "d691af2aa84853aa497e237c6cc3b50f55c9ffa99d1507d8698c49cc4dea86e6"
 
       def install
         bin.install "syl-md2ppt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hooziwang/syl-md2ppt/releases/download/v1.0.3/syl-md2ppt_1.0.3_darwin_arm64.tar.gz"
-      sha256 "cbe9ba2008e46b28ffad8a375f8798c5f705279ee107698962962f76871d995c"
+      url "https://github.com/hooziwang/syl-md2ppt/releases/download/v1.0.4/syl-md2ppt_1.0.4_darwin_arm64.tar.gz"
+      sha256 "f143817056f7889e50b971b9551a3dfe3ff668459fc44f3053e750687c6875cc"
 
       def install
         bin.install "syl-md2ppt"
@@ -28,15 +28,15 @@ class SylMd2ppt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hooziwang/syl-md2ppt/releases/download/v1.0.3/syl-md2ppt_1.0.3_linux_amd64.tar.gz"
-      sha256 "72f84816517d457dfb13f5f205e9637f380321f728dc1376dff9f694a5322343"
+      url "https://github.com/hooziwang/syl-md2ppt/releases/download/v1.0.4/syl-md2ppt_1.0.4_linux_amd64.tar.gz"
+      sha256 "60e8c82d349919f1aa58cd3742def26eb3c79fc7357c75c9a2a52b3f65c357c4"
       def install
         bin.install "syl-md2ppt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hooziwang/syl-md2ppt/releases/download/v1.0.3/syl-md2ppt_1.0.3_linux_arm64.tar.gz"
-      sha256 "5afa299a629fbcc2a2ff32f4f94b51556bc40e041deb1b3e816ebc7d9be30a02"
+      url "https://github.com/hooziwang/syl-md2ppt/releases/download/v1.0.4/syl-md2ppt_1.0.4_linux_arm64.tar.gz"
+      sha256 "93e396b2ca2d8176d15b39389c5bb7f21452ec5465ab4f6fbae5c4eccf709363"
       def install
         bin.install "syl-md2ppt"
       end
