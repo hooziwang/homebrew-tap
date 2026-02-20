@@ -7,6 +7,7 @@
 - `syl-md2ppt`
 - `muna-image-google`
 - `muna-video-google`
+- `clawpipeline`
 
 ## 安装
 
@@ -15,6 +16,7 @@ brew tap hooziwang/tap
 brew install syl-md2ppt
 brew install muna-image-google
 brew install muna-video-google
+brew install clawpipeline
 ```
 
 ## 维护说明
