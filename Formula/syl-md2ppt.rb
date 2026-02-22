@@ -5,22 +5,22 @@
 class SylMd2ppt < Formula
   desc "把 EN/CN Markdown 一键转换为单个双语 PPTX 的命令行工具"
   homepage "https://github.com/hooziwang/syl-md2ppt"
-  version "1.0.6"
+  version "1.0.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hooziwang/syl-md2ppt/releases/download/v1.0.6/syl-md2ppt_1.0.6_darwin_amd64.tar.gz"
-      sha256 "dead5cd2b6f64ad3f1481b86ded61f030878ac99ff14b3248f3189727b994427"
+      url "https://github.com/hooziwang/syl-md2ppt/releases/download/v1.0.7/syl-md2ppt_1.0.7_darwin_amd64.tar.gz"
+      sha256 "284e6a7b0dcc1a8746eca3aa1ace8a63843dcea72d5a749d77de80358008af8c"
 
-      def install
+      define_method(:install) do
         bin.install "syl-md2ppt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hooziwang/syl-md2ppt/releases/download/v1.0.6/syl-md2ppt_1.0.6_darwin_arm64.tar.gz"
-      sha256 "174d5cf306f638b0c4bcbe0325d2224221885fbeecc0d39ae317cfcc2f80a320"
+      url "https://github.com/hooziwang/syl-md2ppt/releases/download/v1.0.7/syl-md2ppt_1.0.7_darwin_arm64.tar.gz"
+      sha256 "0a6a2a6f3ad42d1b579ae4202c66b881db924e015c948f4a4109ea99909e93c8"
 
-      def install
+      define_method(:install) do
         bin.install "syl-md2ppt"
       end
     end
@@ -28,16 +28,16 @@ class SylMd2ppt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hooziwang/syl-md2ppt/releases/download/v1.0.6/syl-md2ppt_1.0.6_linux_amd64.tar.gz"
-      sha256 "eb929b9056395b177fa45dbb4592e6c3d4cd06f6d1f09b1679edd6661c0568b4"
-      def install
+      url "https://github.com/hooziwang/syl-md2ppt/releases/download/v1.0.7/syl-md2ppt_1.0.7_linux_amd64.tar.gz"
+      sha256 "e1c0eb2b3c8eee0d1769c3f4788e8f8f847b50819e9213e21a71b6423e01e99b"
+      define_method(:install) do
         bin.install "syl-md2ppt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hooziwang/syl-md2ppt/releases/download/v1.0.6/syl-md2ppt_1.0.6_linux_arm64.tar.gz"
-      sha256 "06219f43aea876553780f7752570978229f1e1d6a0a5918d291580f1bbd4d08a"
-      def install
+      url "https://github.com/hooziwang/syl-md2ppt/releases/download/v1.0.7/syl-md2ppt_1.0.7_linux_arm64.tar.gz"
+      sha256 "646050fa3fc8cb0d382e0642c87aabecf4c2a847d799b552bf062143405fe200"
+      define_method(:install) do
         bin.install "syl-md2ppt"
       end
     end
