@@ -5,21 +5,21 @@
 class SylWordcount < Formula
   desc "面向 AI 的文本统计与规则校验 CLI"
   homepage "https://github.com/hooziwang/syl-wordcount"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hooziwang/syl-wordcount/releases/download/v1.0.0/syl-wordcount_1.0.0_darwin_amd64.tar.gz"
-      sha256 "286d9d705804132133ab4b4e9b6521a367174efd7952455939bcc455d2a185b6"
+      url "https://github.com/hooziwang/syl-wordcount/releases/download/v1.0.1/syl-wordcount_1.0.1_darwin_amd64.tar.gz"
+      sha256 "e374492c2da50a3001bbcc9983af6fd1373821df46f8c8219d98f2b944ce0cb2"
 
       define_method(:install) do
         bin.install "syl-wordcount"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hooziwang/syl-wordcount/releases/download/v1.0.0/syl-wordcount_1.0.0_darwin_arm64.tar.gz"
-      sha256 "3ed999609476cb78a3ba58cfec9dea8513a3a88015c2a13aa7fc82f9f77e6822"
+      url "https://github.com/hooziwang/syl-wordcount/releases/download/v1.0.1/syl-wordcount_1.0.1_darwin_arm64.tar.gz"
+      sha256 "15b96e1e981b473ac435ac1da7130acc4d3cc9b87a2931828b7e522a7c1285a1"
 
       define_method(:install) do
         bin.install "syl-wordcount"
@@ -29,15 +29,15 @@ class SylWordcount < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hooziwang/syl-wordcount/releases/download/v1.0.0/syl-wordcount_1.0.0_linux_amd64.tar.gz"
-      sha256 "92045d5afaf94e6406f0fd8e8afde45cfdcd94e70befaacf3985c582f2a89825"
+      url "https://github.com/hooziwang/syl-wordcount/releases/download/v1.0.1/syl-wordcount_1.0.1_linux_amd64.tar.gz"
+      sha256 "abdf7494e3e7035f52e7b97f76c03a3c00400c33008098bcf3dd3fb3f1ff1ee2"
       define_method(:install) do
         bin.install "syl-wordcount"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hooziwang/syl-wordcount/releases/download/v1.0.0/syl-wordcount_1.0.0_linux_arm64.tar.gz"
-      sha256 "f63754105e4c8d0b74901c413badda00b93144d58bf6cc7ba7e91cca61b95ded"
+      url "https://github.com/hooziwang/syl-wordcount/releases/download/v1.0.1/syl-wordcount_1.0.1_linux_arm64.tar.gz"
+      sha256 "6c844a6b53a7c6fab582755bcf8d1f4ffa225541a51b0dc186ee1ca193cd6f3c"
       define_method(:install) do
         bin.install "syl-wordcount"
       end
