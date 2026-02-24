@@ -4,6 +4,7 @@
 
 ## 已收录 Formula
 
+- `syl-listing`
 - `syl-md2ppt`
 - `muna-image-google`
 - `muna-video-google`
@@ -13,6 +14,7 @@
 
 ```bash
 brew tap hooziwang/tap
+brew install syl-listing
 brew install syl-md2ppt
 brew install muna-image-google
 brew install muna-video-google
