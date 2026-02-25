@@ -5,20 +5,20 @@
 class SylListing < Formula
   desc "基于 Go + Cobra 的 Amazon Listing 中英双语生成工具"
   homepage "https://github.com/hooziwang/syl-listing"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hooziwang/syl-listing/releases/download/v0.1.0/syl-listing_0.1.0_darwin_amd64.tar.gz"
-      sha256 "f948ea51c76798b91dcafc413557dc42154aba93ad27a5c62bc57921747af6f6"
+      url "https://github.com/hooziwang/syl-listing/releases/download/v0.1.1/syl-listing_0.1.1_darwin_amd64.tar.gz"
+      sha256 "07c8c679df24e3a2f664638454335cd9b1a33ba0dbe7a7e4da2e2af82f67e0f6"
 
       define_method(:install) do
         bin.install "syl-listing"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hooziwang/syl-listing/releases/download/v0.1.0/syl-listing_0.1.0_darwin_arm64.tar.gz"
-      sha256 "043c3bcf3e174abe34c873ca685faa83965a269bf09cc0d8d159e8db7d538b23"
+      url "https://github.com/hooziwang/syl-listing/releases/download/v0.1.1/syl-listing_0.1.1_darwin_arm64.tar.gz"
+      sha256 "cb9dd3084ab65c7300f58235b0efdb7423b89262def7660c21de4ff12d676540"
 
       define_method(:install) do
         bin.install "syl-listing"
@@ -28,15 +28,15 @@ class SylListing < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hooziwang/syl-listing/releases/download/v0.1.0/syl-listing_0.1.0_linux_amd64.tar.gz"
-      sha256 "725f7fc073f06f09e26238b2758aff8628ced3cf00e91ea92e71de13a093b8ef"
+      url "https://github.com/hooziwang/syl-listing/releases/download/v0.1.1/syl-listing_0.1.1_linux_amd64.tar.gz"
+      sha256 "11f06cf1d901e1cfe290ecc46129c4dcf5a5a136d0079587b2203fe8bc1a665e"
       define_method(:install) do
         bin.install "syl-listing"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hooziwang/syl-listing/releases/download/v0.1.0/syl-listing_0.1.0_linux_arm64.tar.gz"
-      sha256 "a7f9263e4299278e41b06b71fde080dcee89ccb8df5f438b50cd3e195d235ccd"
+      url "https://github.com/hooziwang/syl-listing/releases/download/v0.1.1/syl-listing_0.1.1_linux_arm64.tar.gz"
+      sha256 "c983539763a17498279c160558e4158054ee09df226a9741e716ebbef3f0d7bd"
       define_method(:install) do
         bin.install "syl-listing"
       end
