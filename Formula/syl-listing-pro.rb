@@ -5,23 +5,23 @@
 class SylListingPro < Formula
   desc "多租户亚马逊 Listing 双语生成 CLI"
   homepage "https://github.com/hooziwang/syl-listing-pro"
-  version "0.1.0"
+  version "0.1.1"
 
-  depends_on "syl-md2doc"
   depends_on "pandoc"
+  depends_on "syl-md2doc"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hooziwang/syl-listing-pro/releases/download/v0.1.0/syl-listing-pro_0.1.0_darwin_amd64.tar.gz"
-      sha256 "e2a9380f5e91a15047de5a8a76aad99689cad0caf53be279a914682aa367f79a"
+      url "https://github.com/hooziwang/syl-listing-pro/releases/download/v0.1.1/syl-listing-pro_0.1.1_darwin_amd64.tar.gz"
+      sha256 "0c3a13ca22222e2f3c974ef083dd1fb3728a368cdfe9db05e4ee093eb32eb559"
 
       define_method(:install) do
         bin.install "syl-listing-pro"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hooziwang/syl-listing-pro/releases/download/v0.1.0/syl-listing-pro_0.1.0_darwin_arm64.tar.gz"
-      sha256 "a3451e6c1cd73a42599d04c72173e97783596806cbfb9b941778acfe03769b59"
+      url "https://github.com/hooziwang/syl-listing-pro/releases/download/v0.1.1/syl-listing-pro_0.1.1_darwin_arm64.tar.gz"
+      sha256 "b0a1faadb6d7dc1d19b9b805c0b145f7cabd4383ea94ccb51589359e53e4e2ee"
 
       define_method(:install) do
         bin.install "syl-listing-pro"
@@ -31,15 +31,15 @@ class SylListingPro < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hooziwang/syl-listing-pro/releases/download/v0.1.0/syl-listing-pro_0.1.0_linux_amd64.tar.gz"
-      sha256 "65697c451daba9d0ce3bb29a1ba531178c78d5a2917a3749f2619f68ee2fc24b"
+      url "https://github.com/hooziwang/syl-listing-pro/releases/download/v0.1.1/syl-listing-pro_0.1.1_linux_amd64.tar.gz"
+      sha256 "d7a4b7762082ffb1ba638efcc2494fd282c571814e63242cae309f4ce88c57a9"
       define_method(:install) do
         bin.install "syl-listing-pro"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hooziwang/syl-listing-pro/releases/download/v0.1.0/syl-listing-pro_0.1.0_linux_arm64.tar.gz"
-      sha256 "e0349a159d57488d3adf2ddc03854510e0713be8adda80147340b12d60c88d1f"
+      url "https://github.com/hooziwang/syl-listing-pro/releases/download/v0.1.1/syl-listing-pro_0.1.1_linux_arm64.tar.gz"
+      sha256 "7aa4c4f660c10e5dbf97e849a421de44374a338311a295fda4a6313fd2a52982"
       define_method(:install) do
         bin.install "syl-listing-pro"
       end
