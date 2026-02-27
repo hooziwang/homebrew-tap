@@ -7,6 +7,9 @@ class SylListingPro < Formula
   homepage "https://github.com/hooziwang/syl-listing-pro"
   version "0.1.0"
 
+  depends_on "syl-md2doc"
+  depends_on "pandoc"
+
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/hooziwang/syl-listing-pro/releases/download/v0.1.0/syl-listing-pro_0.1.0_darwin_amd64.tar.gz"
