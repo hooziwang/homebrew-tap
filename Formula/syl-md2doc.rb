@@ -5,22 +5,22 @@
 class SylMd2doc < Formula
   desc "把 Markdown 文件批量转换为 Word(docx) 的命令行工具"
   homepage "https://github.com/hooziwang/syl-md2doc"
-  version "0.3.1"
+  version "0.3.2"
 
   depends_on "pandoc"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hooziwang/syl-md2doc/releases/download/v0.3.1/syl-md2doc_0.3.1_darwin_amd64.tar.gz"
-      sha256 "484d027d841af7cbd9f856f6975b58ccba100be199dbb0ac18c46d020eef9c00"
+      url "https://github.com/hooziwang/syl-md2doc/releases/download/v0.3.2/syl-md2doc_0.3.2_darwin_amd64.tar.gz"
+      sha256 "994412bc4bac0df5602858691fa3744153c94dce7eed01c5bea2ea19c56212c8"
 
       define_method(:install) do
         bin.install "syl-md2doc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hooziwang/syl-md2doc/releases/download/v0.3.1/syl-md2doc_0.3.1_darwin_arm64.tar.gz"
-      sha256 "ea87e8fc56d24e393d27b71ea7231a60c6117cb270ea74cf87dd434a3a7194b3"
+      url "https://github.com/hooziwang/syl-md2doc/releases/download/v0.3.2/syl-md2doc_0.3.2_darwin_arm64.tar.gz"
+      sha256 "8ff449aad2d629b111e669bd8ddbbe31d3a58163111b844e02e0c296804ed14d"
 
       define_method(:install) do
         bin.install "syl-md2doc"
@@ -30,15 +30,15 @@ class SylMd2doc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hooziwang/syl-md2doc/releases/download/v0.3.1/syl-md2doc_0.3.1_linux_amd64.tar.gz"
-      sha256 "244d4e786f1ee910c2fdca9de66800a75daad1f97bcb8f00c01d8ac736e0fd5c"
+      url "https://github.com/hooziwang/syl-md2doc/releases/download/v0.3.2/syl-md2doc_0.3.2_linux_amd64.tar.gz"
+      sha256 "87278fa9e4479da203c71ef318db0b371cb48bda7a5ff95dd1721dccd9b5b772"
       define_method(:install) do
         bin.install "syl-md2doc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hooziwang/syl-md2doc/releases/download/v0.3.1/syl-md2doc_0.3.1_linux_arm64.tar.gz"
-      sha256 "fc3ef7f424d62fa35464ea58f2b5fa03036929381e84cefbb17c5e7a34f11467"
+      url "https://github.com/hooziwang/syl-md2doc/releases/download/v0.3.2/syl-md2doc_0.3.2_linux_arm64.tar.gz"
+      sha256 "86c7648c4616658e3e56a2a4b475a5ab4ba5e8ddb4ccf0f862ecc69f468eefbc"
       define_method(:install) do
         bin.install "syl-md2doc"
       end
